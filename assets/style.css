@@ -210,15 +210,15 @@
 
 footer {
   background: #ffc700;
-  display: flex;
-  justify-content: center;
   align-items: center;
   padding: 25px 0;
 }
 footer .footerbx {
-  display: flex;
   padding: 20px;
   gap: 100px;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 footer .footerbx .shape {
   display: flex;
@@ -227,13 +227,13 @@ footer .footerbx .shape {
   align-items: center;
 }
 footer .footerbx .shape h2 {
-  width: 170px;
+  width: 190px;
   background: #10a958;
   text-align: center;
   padding: 20px;
 }
 footer .footerbx .shape h2:first-child {
-  width: 100px;
+  width: 120px;
 }
 footer .footerbx .otherlinks {
   display: flex;
@@ -289,4 +289,36 @@ footer .footerbx .arrow a {
   margin-bottom: 20px;
   text-decoration: none;
   font-size: 30px;
+}
+footer .autoscrolltext {
+  position: relative;
+  width: 100%;
+  background: blueviolet;
+}
+footer .autoscrolltext .marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+footer .autoscrolltext .marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 20s linear infinite;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+footer .autoscrolltext .marquee2 span {
+  animation-delay: 10s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
 }/*# sourceMappingURL=style.css.map */
