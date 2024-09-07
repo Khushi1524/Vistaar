@@ -2,6 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar{
+  display: none;
 }
 
 .container {
@@ -10,20 +15,102 @@
 }
 
 #homepage {
+  background: #ffc700;
+  min-height: 100vh;
+
   .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 30px 10px;
+    align-items: center;
+    padding: 25px 10px;
+    padding-bottom:10px ;
+    position: relative;
+
+    .rightelements {
+      select.btn {
+        background: transparent;
+        font-size: 17px;
+        padding: 10px;
+      }
+    }
+
+    .title {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      line-height: 0;
+      letter-spacing: 0.5px;
+      font-size: 23px;
+    }
+
+    .leftelements {
+      .icon {
+        i {
+          font-size: 20px;
+          font-weight: bold;
+          margin-left: 15px;
+        }
+      }
+    }
 
     .leftelements,
     .rightelements {
       display: flex;
+      align-items: center;
       gap: 10px;
 
-      .btn{
-        padding: 7px 20px;
-        border: 1px solid;
-        border-radius: 20px;
+      .btn {
+        padding: 6px 20px;
+        padding-top: 8px;
+        border: 2px solid;
+        border-radius: 25px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .carousel {
+    white-space: nowrap;
+    border-bottom: 4px solid;
+    overflow: scroll;
+    padding-bottom: 10px;
+
+    svg {
+      display: inline;
+
+      &.ecllipse {
+        width: 300px;
+        height: 450px;
+      }
+
+      &.pattern {
+        width: 450px;
+        height: 450px;
+      }
+
+      &.circle {
+        width: 450px;
+        height: 450px;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    min-height: 100vh;
+    padding-top: 60px;
+
+    .firstline,
+    .secondline,
+    .thirdline {
+      span {
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 10px;
       }
     }
   }
