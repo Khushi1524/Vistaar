@@ -197,5 +197,18 @@ let products = {
       }
     ]
   }
+
+  if(document.getElementById('menprod')){
+      let menprod = document.getElementById('menprod');
+      let womenprod =  document.getElementById('womenprod');
+      let accessoriesprod = document.getElementById('accessoriesprod');
+
+      menprod.src = products.products[0].mens[0].thumbnail;
+      womenprod.src = products.products[0].womens[0].thumbnail;
+      accessoriesprod.src = products.products[0].accessories[0].thumbnail;
+      
+  
+      
+  }
   
   
