@@ -210,4 +210,83 @@
 
 footer {
   background: #ffc700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+}
+footer .footerbx {
+  display: flex;
+  padding: 20px;
+  gap: 100px;
+}
+footer .footerbx .shape {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .footerbx .shape h2 {
+  width: 170px;
+  background: #10a958;
+  text-align: center;
+  padding: 20px;
+}
+footer .footerbx .shape h2:first-child {
+  width: 100px;
+}
+footer .footerbx .otherlinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footerbx .otherlinks .objective {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .footerbx .otherlinks .objective h4 {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+footer .footerbx .otherlinks .objective ul li {
+  list-style: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+footer .footerbx .social a {
+  font-size: 18px;
+  padding: 18px;
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+footer .footerbx .social a:first-child {
+  padding-left: 0;
+}
+footer .footerbx .social a:first-child i {
+  rotate: -40deg;
+  font-size: 25px;
+}
+footer .footerbx .social a:last-child {
+  padding-right: 0;
+}
+footer .footerbx .arrow {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+footer .footerbx .arrow a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  aspect-ratio: 1/1;
+  background: #000000;
+  border-radius: 50%;
+  color: #ffc700;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 30px;
 }/*# sourceMappingURL=style.css.map */
