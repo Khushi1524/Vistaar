@@ -205,10 +205,21 @@ let products = {
 
       menprod.src = products.products[0].mens[0].thumbnail;
       womenprod.src = products.products[0].womens[0].thumbnail;
-      accessoriesprod.src = products.products[0].accessories[0].thumbnail;
-      
-  
-      
+      accessoriesprod.src = products.products[0].accessories[0].thumbnail;   
+  }
+
+
+  if(document.getElementById('tee')){
+    let tee = document.getElementById('tee');
+    let jacket = document.getElementById('jacket');
+    let shapeup =  document.getElementById('shapeup');
+    let hat =  document.getElementById('hat')
+
+    tee.src = products.products[0].womens[0].images[0];
+    hat.src = products.products[0].womens[1].images[0];
+    shapeup.src = products.products[0].womens[2].images[2];
+    jacket.src = products.products[0].womens[2].images[0];
+    
   }
   
   

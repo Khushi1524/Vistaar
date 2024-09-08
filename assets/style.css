@@ -293,7 +293,6 @@ footer .footerbx .arrow a {
 footer .autoscrolltext {
   position: relative;
   width: 100%;
-  background: blueviolet;
 }
 footer .autoscrolltext .marquee {
   margin: 0 auto;
