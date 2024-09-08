@@ -249,10 +249,114 @@ header .navbar .rightelements .btn {
   font-weight: bold;
 }
 
+#singleprod {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+#singleprod .allinfo {
+  display: flex;
+  gap: 20px;
+}
+#singleprod .allinfo .smallcard {
+  width: 60px;
+}
+#singleprod .allinfo .smallcard img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+#singleprod .allinfo .smallcard #sm1 {
+  border: 2px solid;
+}
+#singleprod .allinfo .card {
+  width: 380px;
+}
+#singleprod .allinfo .card #bigimg {
+  width: 100%;
+  border-radius: 30px;
+}
+#singleprod .allinfo .cardcontent .layerbtn {
+  padding: 10px;
+}
+#singleprod .allinfo .cardcontent .layerbtn button {
+  padding: 6px 10px;
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: bold;
+  background: #10a958;
+  border: none;
+}
+#singleprod .allinfo .cardcontent .design {
+  padding: 10px;
+}
+#singleprod .allinfo .cardcontent .design h2 {
+  font-size: 35px;
+}
+#singleprod .allinfo .cardcontent .size {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  gap: 10px;
+}
+#singleprod .allinfo .cardcontent .size .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid;
+}
+#singleprod .allinfo .cardcontent .size .circle#firstcircle {
+  background: #000000;
+  color: #fff;
+}
+#singleprod .allinfo .cardcontent .size .circle p {
+  font-weight: bold;
+  font-size: 14px;
+}
+#singleprod .allinfo .cardcontent .soldout {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+}
+#singleprod .allinfo .cardcontent .soldout button {
+  padding: 7px 150px;
+  border-radius: 20px;
+  background: #949494;
+  border: none;
+}
+#singleprod .allinfo .cardcontent .soldout button p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+#singleprod .allinfo .cardcontent .prodinfo {
+  padding: 10px;
+}
+#singleprod .allinfo .cardcontent .prodinfo h4 {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+#singleprod .allinfo .cardcontent .prodinfo p {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-style: italic;
+}
+
 footer {
   background: #ffc700;
   align-items: center;
   padding: 25px 0;
+}
+footer#purple {
+  background: #c5bafb;
 }
 footer .footerbx {
   padding: 20px;
@@ -275,6 +379,35 @@ footer .footerbx .shape h2 {
 }
 footer .footerbx .shape h2:first-child {
   width: 120px;
+}
+footer .footerbx .shape1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  background: #ffc700;
+  width: 160px;
+  height: 170px;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  padding: 15px;
+}
+footer .footerbx .shape1 h2 {
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+footer .footerbx .shape1 .two {
+  display: flex;
+  margin-top: 30px;
+  padding: 0px 20px;
+  letter-spacing: 0.5px;
+}
+footer .footerbx .shape1 .two #figma {
+  rotate: -90deg;
+}
+footer .footerbx .shape1 .two #store {
+  rotate: 90deg;
 }
 footer .footerbx .otherlinks {
   display: flex;

@@ -221,5 +221,22 @@ let products = {
     jacket.src = products.products[0].womens[2].images[0];
     
   }
+
+  if(document.getElementById('sm1')){
+    let sm1 = document.getElementById('sm1');
+    let sm2 = document.getElementById('sm2');
+    let sm3 =  document.getElementById('sm3');
+    let sm4 =  document.getElementById('sm4')
+    let sm5 =  document.getElementById('sm5')
+    let bigimg =  document.getElementById('bigimg')
+
+    sm1.src = products.products[0].womens[0].images[0];
+    sm2.src = products.products[0].womens[0].images[1];
+    sm3.src = products.products[0].womens[0].images[2]; 
+    sm4.src = products.products[0].womens[0].images[0];
+    sm5.src = products.products[0].womens[0].images[0];
+
+    bigimg.src = products.products[0].womens[0].images[2];
+  }
   
   
