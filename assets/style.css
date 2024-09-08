@@ -104,6 +104,12 @@ header .navbar .rightelements .btn {
   letter-spacing: 1px;
   padding: 10px;
 }
+#homepage .content .secondline #layer {
+  text-decoration: underline;
+}
+#homepage .content .secondline #component {
+  text-decoration: underline;
+}
 
 #limitededition .black {
   width: 100vw;
@@ -219,13 +225,14 @@ header .navbar .rightelements .btn {
 #categorypg .container .content h2 {
   font-size: 40px;
   margin-top: 40px;
+  margin-left: 150px;
 }
 #categorypg .container .cardbx {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 #categorypg .container .cardbx .card {
   width: 250px;
@@ -357,6 +364,9 @@ footer {
 }
 footer#purple {
   background: #c5bafb;
+}
+footer#catego {
+  height: 40vh;
 }
 footer .footerbx {
   padding: 20px;
