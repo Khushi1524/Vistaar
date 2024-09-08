@@ -14,7 +14,7 @@
   margin: 0 auto;
 }
 
-#homepage header {
+header {
   position: fixed;
   width: 100%;
   left: 0;
@@ -23,7 +23,7 @@
           backdrop-filter: blur(20px);
   z-index: 9;
 }
-#homepage .navbar {
+header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,12 +32,12 @@
   position: relative;
   background: transparent;
 }
-#homepage .navbar .rightelements select.btn {
+header .navbar .rightelements select.btn {
   background: transparent;
   font-size: 17px;
   padding: 10px;
 }
-#homepage .navbar .title {
+header .navbar .title {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -45,25 +45,26 @@
   letter-spacing: 0.5px;
   font-size: 23px;
 }
-#homepage .navbar .leftelements .icon i {
+header .navbar .leftelements .icon i {
   font-size: 20px;
   font-weight: bold;
   margin-left: 15px;
 }
-#homepage .navbar .leftelements,
-#homepage .navbar .rightelements {
+header .navbar .leftelements,
+header .navbar .rightelements {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-#homepage .navbar .leftelements .btn,
-#homepage .navbar .rightelements .btn {
+header .navbar .leftelements .btn,
+header .navbar .rightelements .btn {
   padding: 6px 20px;
   padding-top: 8px;
   border: 2px solid;
   border-radius: 25px;
   font-weight: bold;
 }
+
 #homepage .carousel {
   background: #ffc700;
   white-space: nowrap;
@@ -206,6 +207,46 @@
   font-size: 12px;
   margin-top: 10px;
   letter-spacing: 3px;
+}
+
+#categorypg .container {
+  height: 90vh;
+}
+#categorypg .container .content {
+  display: flex;
+  justify-content: start;
+}
+#categorypg .container .content h2 {
+  font-size: 40px;
+  margin-top: 40px;
+}
+#categorypg .container .cardbx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+#categorypg .container .cardbx .card {
+  width: 250px;
+  height: 350px;
+}
+#categorypg .container .cardbx .card img {
+  width: 100%;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#categorypg .container .cardbx .card .cardcontent {
+  display: flex;
+  gap: 25px;
+  padding: 5px 15px;
+}
+#categorypg .container .cardbx .card .cardcontent h4 {
+  font-size: 15px;
+}
+#categorypg .container .cardbx .card .cardcontent p {
+  font-weight: bold;
 }
 
 footer {
