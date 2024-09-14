@@ -40,22 +40,22 @@
     <main id="singleprod">
         <div class="allinfo">
             <div class="smallcard" id="smcard">
-              
             </div>
-
             <div class="card">
                 <img id="bigimg" src="" alt="">
             </div>
 
             <div class="cardcontent">
                 <div class="layerbtn">
-                    <button>LAYERS</button>
+                    <button>APPARELS</button>
                 </div>
                 <div class="design">
-                    <h2>Design in bloom tee</h2>
+                    <h2><span id="title"></span></h2>
                 </div>
                 <div class="size">
-                    <div id="firstcircle" class="circle"><p>S</p></div>
+                    <div id="firstcircle" class="circle">
+                        <p>S</p>
+                    </div>
                     <div class="circle">
                         <p>M</p>
                     </div>
@@ -71,26 +71,60 @@
                 </div>
 
                 <div class="size" id="size1">
-                    <div class="circle"><p>-</p></div>
+                    <div class="circle">
+                        <p>-</p>
+                    </div>
                     <p>1</p>
-                    <div class="circle"><p>+</p></div>
+                    <div class="circle">
+                        <p>+</p>
+                    </div>
                 </div>
 
                 <div class="soldout">
-                    <button>
+                    <button id="soldbtn">
                         <p>SOLD OUT</p>
+                    </button>
+                    <button onclick="openform()" id="soldbtn1">
+                        <p>ADD Rs. <span id="price"></span></p>
                     </button>
                 </div>
 
                 <div class="prodinfo">
-                    <h4>We raided the arts and crafts box to raise the bar <br>(and the link) on this blossoming tee.
-                    </h4>
+                    <h4 id="description"></h4>
                     <br>
-                    <p>100% cotton, unisex sizing , Printed with puff ink on <br> a Comfort Colors tee.</p>
+                    <!-- <p>100% cotton, unisex sizing , Printed with puff ink on <br> a Comfort Colors tee.</p> -->
                 </div>
             </div>
         </div>
+
+
+        <form id="form" onsubmit="onformsubmit(event)" >
+            <div class="inputfields">
+                <label for="">FirstName</label> <br>
+                <input type="text" name="" placeholder="Enter your firstName" id="">
+                <br>
+                <label for="">LastName</label> <br>
+                <input type="text" name="" placeholder="LastName" id="">
+                <br>
+                <label for="">Email</label> <br>
+                <input type="email" name="" placeholder="Email" id="">
+                <br>
+                <label for="">Phone Number</label> <br>
+                <input type="number" name="" placeholder="Phone Number" id="">
+                <br>
+                <label for="">Address</label><br>
+                <input type="textarea" name="" placeholder="Address" id="">
+                <br>
+                <div class="btns">
+                    <button onclick="closeform()" id="close" type="reset">Close</button>
+                    <button type="submit">Submit</button> 
+                </div>
+    
+            </div>
+        </form>
     </main>
+
+ 
 
     <footer id="purple">
         <div class="footerbx">
@@ -279,13 +313,13 @@
     <script>
         const swiperEl = document.querySelector('swiper-container');
         Object.assign(swiperEl, {
-            slidesPerView: 'auto',  
-            loop: true,             
+            slidesPerView: 'auto',
+            loop: true,
             autoplay: {
-                delay: 600,         
-                disableOnInteraction: false, 
+                delay: 600,
+                disableOnInteraction: false,
             },
-            spaceBetween: 0,        
+            spaceBetween: 0,
         });
         swiperEl.initialize();      
     </script>

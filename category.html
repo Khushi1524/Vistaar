@@ -42,42 +42,14 @@
             <div class="content">
                 <h2>CATEGORY <span id="categotitle"></span>'S</h2>
             </div>
-            <div class="cardbx">
-                <div onclick="gotoprod(`singleprod.html?productid=0`)" class="card">
-                    <img id="tee" src="" alt="">
-                    <div class="cardcontent">
-                        <h4>New !<br> Design is bloom tee</h4>
-                        <p>Rs.2,200</p>
-                    </div>
-                </div>
+            <div id="cardbx" class="cardbx">
 
-                <div onclick="gotoprod(`singleprod.html?productid=1`)" class="card">
 
-                    <img id="jacket" src="" alt="">
 
-                    <div class="cardcontent">
-                        <h4>New !<br> Version history coach jacket</h4>
-                        <p>Rs.3,900</p>
-                    </div>
-                </div>
 
-                <div onclick="gotoprod(`singleprod.html?productid=2`)" class="card">
-                    <img id="shapeup" src="" alt="">
-                    <div class="cardcontent">
-                        <h4>New !<br> Shape up tee</h4>
-                        <p>Rs.1,700</p>
-                    </div>
-                </div>
 
-                <div onclick="gotoprod(`singleprod.html?productid=2`)" class="card">
 
-                    <img id="hat" src="" alt="">
 
-                    <div class="cardcontent">
-                        <h4>New !<br> Dress code hat</h4>
-                        <p>Rs.1,700</p>
-                    </div>
-                </div>
             </div>
         </div>
     </main>
@@ -235,13 +207,13 @@
     <script>
         const swiperEl = document.querySelector('swiper-container');
         Object.assign(swiperEl, {
-            slidesPerView: 'auto',  
-            loop: true,             
+            slidesPerView: 'auto',
+            loop: true,
             autoplay: {
-                delay: 600,         
-                disableOnInteraction: false, 
+                delay: 600,
+                disableOnInteraction: false,
             },
-            spaceBetween: 0,        
+            spaceBetween: 0,
         });
         swiperEl.initialize();      
     </script>

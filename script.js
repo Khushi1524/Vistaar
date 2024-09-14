@@ -225,64 +225,98 @@ if (document.getElementById("menprod")) {
   accessoriesprod.src = products.products[0].accessories[0].thumbnail;
 }
 
-if (document.getElementById("tee")) {
-  let url = new URLSearchParams(window.location.search)
-  let category = url.get("category")
- 
-  let categotitle = document.getElementById('categotitle');
-  categotitle.innerHTML = category.slice(0,-1)
-  
+if (document.getElementById("cardbx")) {
+  let cardbx = document.getElementById("cardbx");
+  let urlParams = new URLSearchParams(window.location.search);
+  let urlCategory = urlParams.get("category") || 'womens';
+  let categoryProducts = products.products[0][urlCategory];
+  document.getElementById("categotitle").textContent = urlCategory
+    .split("s")
+    .join("");
 
-  let tee = document.getElementById("tee");
-  let jacket = document.getElementById("jacket");
-  let shapeup = document.getElementById("shapeup");
-  let hat = document.getElementById("hat");
+  categoryProducts.forEach((product) => {
+    console.log(product.id);
+    let cardStructure = `
+    <div onclick="gotoprod('singleprod.html?productid=${product.id}')" class="card">
+      <img id="img4" src="${product.thumbnail}" alt="">
+      <div class="cardcontent">
+           <h4 id="title3">New !<br> ${product.title}</h4>
+            <p id="price3">Rs.${product.price}</p>
+      </div>
+    </div>`;
 
-  tee.src = products.products[0][category][0].images[0];
-  jacket.src = products.products[0][category][1].images[0];
-  shapeup.src = products.products[0][category][2].images[2];
-  hat.src = products.products[0][category][2].images[0];
+    cardbx.innerHTML += cardStructure;
+  });
 }
 
 if (document.getElementById("bigimg")) {
   let urlParams = new URLSearchParams(window.location.search);
-  let productId = urlParams.get("productid");
+  let productId = urlParams.get("productid") || 4;
+  let urlCategory = urlParams.get("category") || 'womens';
+  let selectedProduct = products.products[0][urlCategory].find(
+    (product) => product.id == productId
+  );
+  console.log(selectedProduct);
 
-  let category = urlParams.get("category"); 
+  let title = document.getElementById("title");
+  let description = document.getElementById("description");
+  let price = document.getElementById("price");
+  let quantity = document.getElementById("quantity");
+
+  title.innerText = selectedProduct.title;
+  description.innerText = selectedProduct.description;
+  price.innerText = selectedProduct.price;
 
   let bigimg = document.getElementById("bigimg");
-  bigimg.src = products.products[0][category][productId].images[0];
-  
-  
+  bigimg.src = selectedProduct.images[0];
 
   let smcard = document.querySelector("#smcard");
-  for (let i = 0; i < products.products[0][category][productId].images.length; i++) {
+  for (let i = 0; i < selectedProduct.images.length; i++) {
     let active = i == 0 ? `active` : ``;
-    let imgsrc = products.products[0][category][productId].images[i];
+    let imgsrc = selectedProduct.images[i];
     smcard.innerHTML += `<img onclick="smtobigimg(this)" class="smimg ${active}" src="${imgsrc}" alt="">`;
   }
+
+  if (selectedProduct.quantity != 0) {
+    let soldbtn = document.getElementById("soldbtn");
+    soldbtn.style.display = "none";
+  }else{
+    let soldbtn1 = document.getElementById('soldbtn1')
+    soldbtn1.style.display = "none";
+  }
+}
+
+function openform(){
+  document.getElementById('form').style.display = 'flex'
+}
+
+function closeform(){
+  document.getElementById('form').style.display = 'none'
+}
+
+function onformsubmit(e){
+  e.preventDefault();
+  closeform();
 }
 
 function goto(url) {
   window.location.href = url;
 }
 
-function gotoprod(url1){
- let url = new URLSearchParams(window.location.search);
- let category = url.get(`category`);
- window.location.href = url1 + `&category=` + category;
+function gotoprod(url1) {
+  let url = new URLSearchParams(window.location.search);
+  let category = url.get(`category`);
+  window.location.href = url1 + `&category=` + category;
 }
 
-function smtobigimg(elem){
-  let smimggrp = document.getElementsByClassName('smimg')
+function smtobigimg(elem) {
+  let smimggrp = document.getElementsByClassName("smimg");
   console.log(smimggrp);
-  
-  Array.from(smimggrp).forEach(element => {
-    element.classList.remove('active');
-  });
-  
-  elem.classList.add('active');
-  document.getElementById("bigimg").src = elem.src;
 
-   
+  Array.from(smimggrp).forEach((element) => {
+    element.classList.remove("active");
+  });
+
+  elem.classList.add("active");
+  document.getElementById("bigimg").src = elem.src;
 }
