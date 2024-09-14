@@ -76,6 +76,7 @@ header .navbar .rightelements .btn {
   header .navbar .title {
     width: 100%;
     text-align: center;
+    font-size: 18px;
   }
 }
 #homepage .carousel {
@@ -126,6 +127,22 @@ header .navbar .rightelements .btn {
 }
 
 @media (width < 480px) {
+  #homepage .carousel {
+    width: 100%;
+    padding-top: 50px;
+  }
+  #homepage .carousel svg.ecllipse {
+    width: 200px;
+    height: 275px;
+  }
+  #homepage .carousel svg.pattern {
+    width: 250px;
+    height: 250px;
+  }
+  #homepage .carousel svg.circle {
+    width: 250px;
+    height: 250px;
+  }
   #homepage .content {
     text-align: center;
     line-height: 25px;
@@ -329,6 +346,30 @@ header .navbar .rightelements .btn {
   font-size: 20px;
 }
 
+@media (width < 480px) {
+  #categorypg .container {
+    height: auto;
+    padding: 15px;
+  }
+  #categorypg .container .content {
+    padding-left: 20px;
+  }
+  #categorypg .container .content h2 {
+    font-size: 27px;
+    margin-top: 60px;
+  }
+  #categorypg .container .cardbx {
+    flex-direction: column;
+    padding: 20px;
+  }
+  #categorypg .container .cardbx .card {
+    width: 100%;
+    height: auto;
+  }
+  #categorypg .container .cardbx .card .cardcontent {
+    margin-bottom: 35px;
+  }
+}
 #singleprod {
   display: flex;
   justify-content: center;
@@ -512,6 +553,25 @@ header .navbar .rightelements .btn {
   color: #000000;
 }
 
+@media (width < 480px) {
+  #singleprod .allinfo {
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+  #singleprod .allinfo .smallcard {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 250px;
+    height: 350px;
+  }
+  #singleprod .allinfo .card {
+    display: none;
+  }
+  #singleprod .allinfo .cardcontent .size {
+    flex-direction: row-reverse;
+  }
+}
 footer {
   background: #ffc700;
   align-items: center;
