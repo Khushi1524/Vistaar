@@ -392,6 +392,10 @@ header {
           .smimg {
             width: 100px;
 
+            &.orange{
+              top:20px;
+            }
+
             &.yellow {
               left: 70%;
               top: 80px;
@@ -1015,6 +1019,12 @@ footer {
           h4 {
             font-size: 40px;
           }
+
+          ul{
+            li{
+              font-size: 17px;
+            }
+          }
         }
       }
 
@@ -1029,7 +1039,7 @@ footer {
         a {
           margin: 0;
           padding: 0;
-          font-size: 15px;
+          font-size: 17px;
         }
       }
     }
@@ -1049,6 +1059,14 @@ footer {
   height: 60px;
   background: #fff;
   z-index: 9;
+}
+
+@media (width < 480px) {
+  .msg{
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+  }
 }
 
 // autoscroll

@@ -316,6 +316,9 @@ header .navbar .rightelements .btn {
   #limitededition .black .white .imgbx .smimg {
     width: 100px;
   }
+  #limitededition .black .white .imgbx .smimg.orange {
+    top: 20px;
+  }
   #limitededition .black .white .imgbx .smimg.yellow {
     left: 70%;
     top: 80px;
@@ -821,6 +824,9 @@ footer .footerbx .arrow a {
   footer .footerbx .otherlinks .objective h4 {
     font-size: 40px;
   }
+  footer .footerbx .otherlinks .objective ul li {
+    font-size: 17px;
+  }
   footer .footerbx .social {
     display: flex;
     flex-direction: column;
@@ -832,7 +838,7 @@ footer .footerbx .arrow a {
   footer .footerbx .social a {
     margin: 0;
     padding: 0;
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 .msg {
@@ -850,6 +856,13 @@ footer .footerbx .arrow a {
   z-index: 9;
 }
 
+@media (width < 480px) {
+  .msg {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+  }
+}
 .scroll {
   position: relative;
   display: flex;
