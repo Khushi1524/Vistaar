@@ -14,15 +14,27 @@
         <nav class="navbar container">
 
             <div class="leftelements">
-                <a class="btn">SHOP</a>
-                <a class="btn">ABOUT</a>
+                <span id="hiddenelements"> <a class="btn">SHOP</a>
+                    <a class="btn">ABOUT</a>
+
+                    <span>
+                        <a href="">FAQ</a>
+                        <a href="">Contact Us</a>
+                        <a href="">Privacy POlicy</a>
+                        <a href="">Terms of Service</a>
+                        <a href="">Accounts</a>
+                    </span>
+
+                </span>
+
+                <a onclick="openmenu()" id="menuopen" class="btn menu"><i class='bx bx-menu'></i></a>
+                <a onclick="closemenu()" id="menuclose" class="btn menu"><i class='bx bx-x'></i></a>
                 <a class="icon"><i class='bx bx-search'></i></a>
             </div>
 
             <h3 class="title">THE FIGMA STORE</h3>
 
             <div class="rightelements">
-                <img src="" alt="">
                 <select class="btn" name="" id="">
                     <option value="">UNITED STATES</option>
                     <option value="">CANADA</option>
@@ -31,7 +43,7 @@
                     <option value="">EUROPEN UNION</option>
                     <option value="">I'M JUST BROWSING</option>
                 </select>
-                <a class="btn">CART 0</a>
+                <a class="btn"><span>CART</span> 0</a>
             </div>
 
         </nav>
