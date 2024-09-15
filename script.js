@@ -228,9 +228,9 @@ if (document.getElementById("menprod")) {
 if (document.getElementById("cardbx")) {
   let cardbx = document.getElementById("cardbx");
   let urlParams = new URLSearchParams(window.location.search);
-  let urlCategory = urlParams.get("category") || 'womens';
+  let urlCategory = urlParams.get("category") || "womens";
   let categoryProducts = products.products[0][urlCategory];
-  document.getElementById("categotitle").textContent = urlCategory.slice(0,-1)
+  document.getElementById("categotitle").textContent = urlCategory.slice(0, -1);
 
   categoryProducts.forEach((product) => {
     console.log(product.id);
@@ -250,11 +250,10 @@ if (document.getElementById("cardbx")) {
 if (document.getElementById("bigimg")) {
   let urlParams = new URLSearchParams(window.location.search);
   let productId = urlParams.get("productid") || 4;
-  let urlCategory = urlParams.get("category") || 'womens';
+  let urlCategory = urlParams.get("category") || "womens";
   let selectedProduct = products.products[0][urlCategory].find(
     (product) => product.id == productId
   );
-  console.log(selectedProduct);
 
   let title = document.getElementById("title");
   let description = document.getElementById("description");
@@ -278,21 +277,21 @@ if (document.getElementById("bigimg")) {
   if (selectedProduct.quantity != 0) {
     let soldbtn = document.getElementById("soldbtn");
     soldbtn.style.display = "none";
-  }else{
-    let soldbtn1 = document.getElementById('soldbtn1')
+  } else {
+    let soldbtn1 = document.getElementById("soldbtn1");
     soldbtn1.style.display = "none";
   }
 }
 
-function openform(){
-  document.getElementById('form').style.display = 'flex'
+function openform() {
+  document.getElementById("form").style.display = "flex";
 }
 
-function closeform(){
-  document.getElementById('form').style.display = 'none'
+function closeform() {
+  document.getElementById("form").style.display = "none";
 }
 
-function onformsubmit(e){
+function onformsubmit(e) {
   e.preventDefault();
   closeform();
 }
@@ -309,7 +308,6 @@ function gotoprod(url1) {
 
 function smtobigimg(elem) {
   let smimggrp = document.getElementsByClassName("smimg");
-  console.log(smimggrp);
 
   Array.from(smimggrp).forEach((element) => {
     element.classList.remove("active");
@@ -319,15 +317,31 @@ function smtobigimg(elem) {
   document.getElementById("bigimg").src = elem.src;
 }
 
-
-function openmenu(){
-  document.getElementById('menuopen').style.display = "none";
-  document.getElementById('hiddenelements').style.top = 0;
-  document.getElementById('menuclose').style.display = "block";
+function openmenu() {
+  document.getElementById("menuopen").style.display = "none";
+  document.getElementById("hiddenelements").style.top = 0;
+  document.getElementById("menuclose").style.display = "block";
 }
 
-function closemenu(){
-  document.getElementById('menuopen').style.display = "block";
-  document.getElementById('hiddenelements').style.top = '-100vh';
-  document.getElementById('menuclose').style.display = "none";
+function closemenu() {
+  document.getElementById("menuopen").style.display = "block";
+  document.getElementById("hiddenelements").style.top = "-100vh";
+  document.getElementById("menuclose").style.display = "none";
 }
+
+let addbtn = document.getElementById("add");
+let subbtn = document.getElementById("sub");
+let value = document.getElementById("value");
+let counter = 1;
+
+addbtn.addEventListener("click", () => {
+  counter++;
+  value.innerHTML = counter;
+});
+
+subbtn.addEventListener("click", () => {
+  if (counter > 0) {
+    counter--;
+    value.innerHTML = counter;
+  }
+});
