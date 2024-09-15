@@ -650,6 +650,43 @@ header .navbar .rightelements .btn {
   #singleprod .allinfo .card {
     display: none;
   }
+  #singleprod .allinfo .cardcontent .layerbtn button {
+    padding: 8px 12px;
+  }
+  #singleprod .allinfo .cardcontent .design h2 {
+    font-size: 30px;
+  }
+  #singleprod .allinfo .cardcontent .size .circle {
+    width: 35px;
+    height: 35px;
+  }
+  #singleprod .allinfo .cardcontent .soldout #soldbtn,
+  #singleprod .allinfo .cardcontent .soldout #soldbtn1 {
+    padding: 7px 110px;
+  }
+  #singleprod #form {
+    -webkit-backdrop-filter: blur(100px);
+            backdrop-filter: blur(100px);
+    padding: 40px 50px;
+  }
+  #singleprod #form .inputfields {
+    margin-top: 50px;
+  }
+  #singleprod #form .inputfields label {
+    font-size: 15px;
+  }
+  #singleprod #form .inputfields input {
+    margin: 0;
+    font-size: 14px;
+    padding: 3px 0px;
+  }
+  #singleprod #form .inputfields .btns {
+    width: 80%;
+  }
+  #singleprod #form .inputfields .btns button {
+    padding: 7px 6px;
+    font-size: 15px;
+  }
 }
 footer {
   background: #ffc700;
@@ -773,6 +810,8 @@ footer .footerbx .arrow a {
 @media (width < 480px) {
   footer .footerbx {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
   }
   footer .footerbx .otherlinks .objective {

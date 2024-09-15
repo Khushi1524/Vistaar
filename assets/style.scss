@@ -794,6 +794,61 @@ header {
       .card {
         display: none;
       }
+
+      .cardcontent {
+        .layerbtn {
+          button {
+            padding: 8px 12px;
+          }
+        }
+
+        .design {
+          h2 {
+            font-size: 30px;
+          }
+        }
+
+        .size {
+          .circle {
+            width: 35px;
+            height: 35px;
+          }
+        }
+        .soldout {
+          #soldbtn,
+          #soldbtn1 {
+            padding: 7px 110px;
+          }
+        }
+      }
+    }
+
+    #form {
+      backdrop-filter: blur(100px);
+      padding: 40px 50px;
+
+      .inputfields {
+        margin-top: 50px;
+
+        label {
+          font-size: 15px;
+        }
+
+        input {
+          margin: 0;
+          font-size: 14px;
+          padding: 3px 0px;
+        }
+
+        .btns {
+          width: 80%;
+
+          button {
+            padding: 7px 6px;
+            font-size: 15px;
+          }
+        }
+      }
     }
   }
 }
@@ -946,7 +1001,11 @@ footer {
   footer {
     .footerbx {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       gap: 20px;
+
+     
 
       .otherlinks {
         .objective {
@@ -992,9 +1051,7 @@ footer {
   z-index: 9;
 }
 
-
 // autoscroll
-
 
 .scroll {
   position: relative;
