@@ -306,6 +306,14 @@ function gotoprod(url1) {
   window.location.href = url1 + `&category=` + category;
 }
 
+function gotosingleprod(url2){
+  let url = new URLSearchParams(window.location.search);
+  let category = url.get(`category`);
+  let productId =url.get('productid')
+  window.location.href = url + productId + category
+  
+}
+
 function smtobigimg(elem) {
   let smimggrp = document.getElementsByClassName("smimg");
 
@@ -340,7 +348,7 @@ addbtn.addEventListener("click", () => {
 });
 
 subbtn.addEventListener("click", () => {
-  if (counter > 0) {
+  if (counter > 1) {
     counter--;
     value.innerHTML = counter;
   }
