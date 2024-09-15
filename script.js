@@ -230,9 +230,7 @@ if (document.getElementById("cardbx")) {
   let urlParams = new URLSearchParams(window.location.search);
   let urlCategory = urlParams.get("category") || 'womens';
   let categoryProducts = products.products[0][urlCategory];
-  document.getElementById("categotitle").textContent = urlCategory
-    .split("s")
-    .join("");
+  document.getElementById("categotitle").textContent = urlCategory.slice(0,-1)
 
   categoryProducts.forEach((product) => {
     console.log(product.id);
@@ -319,4 +317,17 @@ function smtobigimg(elem) {
 
   elem.classList.add("active");
   document.getElementById("bigimg").src = elem.src;
+}
+
+
+function openmenu(){
+  document.getElementById('menuopen').style.display = "none";
+  document.getElementById('hiddenelements').style.top = 0;
+  document.getElementById('menuclose').style.display = "block";
+}
+
+function closemenu(){
+  document.getElementById('menuopen').style.display = "block";
+  document.getElementById('hiddenelements').style.top = '-100vh';
+  document.getElementById('menuclose').style.display = "none";
 }
