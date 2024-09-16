@@ -311,7 +311,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-let sizes = document.getElementsByClassName('circle');
+let sizes = document.getElementsByClassName('circles');
 
 Array.from(sizes).forEach(size => {
   size.addEventListener('click', () => {

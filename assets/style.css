@@ -499,7 +499,7 @@ header .navbar .rightelements .btn {
   padding: 10px;
   gap: 10px;
 }
-#singleprod .allinfo .cardcontent .size .circle {
+#singleprod .allinfo .cardcontent .size .circles {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -509,7 +509,7 @@ header .navbar .rightelements .btn {
   border-radius: 50%;
   border: 2px solid;
 }
-#singleprod .allinfo .cardcontent .size .circle p {
+#singleprod .allinfo .cardcontent .size .circles p {
   font-weight: bold;
   font-size: 14px;
 }
