@@ -65,16 +65,16 @@
                     <h2><span id="title"></span></h2>
                 </div>
                 <div class="size">
-                    <div id="firstcircle" class="circle">
+                    <div  id="firstcircle" class="circle">
                         <p>S</p>
                     </div>
                     <div class="circle">
                         <p>M</p>
                     </div>
-                    <div class="circle">
+                    <div  class="circle">
                         <p>L</p>
                     </div>
-                    <div class="circle">
+                    <div  class="circle">
                         <p>XL</p>
                     </div>
                     <div class="circle">
@@ -84,10 +84,10 @@
 
                 <div class="size" id="size1">
                     <div class="circle">
-                        <p  id="sub">-</p>
+                        <p onclick="colorChange()"  id="sub">-</p>
                     </div>
                     <p id="value">1</p>
-                    <div class="circle">
+                    <div onclick="colorChange()" class="circle">
                         <p  id="add">+</p>
                     </div>
                 </div>
@@ -112,20 +112,20 @@
 
         <form id="form" onsubmit="onformsubmit(event)" >
             <div class="inputfields">
-                <label for="">FirstName</label> <br>
-                <input type="text" name="" placeholder="Enter your firstName" id="">
+                <label for="">First Name</label> <br>
+                <input type="text" name="" placeholder="Enter your firstname" id="">
                 <br>
-                <label for="">LastName</label> <br>
-                <input type="text" name="" placeholder="LastName" id="">
+                <label for="">Last Name</label> <br>
+                <input type="text" name="" placeholder=" Enter your Lastname" id="">
                 <br>
                 <label for="">Email</label> <br>
-                <input type="email" name="" placeholder="Email" id="">
+                <input type="email" name="" placeholder="Enter your Email" id="">
                 <br>
                 <label for="">Phone Number</label> <br>
-                <input type="number" name="" placeholder="Phone Number" id="">
+                <input type="number" name="" placeholder=" Enter your Phone Number" id="">
                 <br>
                 <label for="">Address</label><br>
-                <input type="textarea" name="" placeholder="Address" id="">
+                <input type="textarea" name="" placeholder=" Enter your Address" id="">
                 <br>
                 <div class="btns">
                     <button onclick="closeform()" id="close" type="reset">Close</button>

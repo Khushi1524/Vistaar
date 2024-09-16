@@ -306,12 +306,9 @@ function gotoprod(url1) {
   window.location.href = url1 + `&category=` + category;
 }
 
-function gotosingleprod(url2){
-  let url = new URLSearchParams(window.location.search);
-  let category = url.get(`category`);
-  let productId =url.get('productid')
-  window.location.href = url + productId + category
-  
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
 function smtobigimg(elem) {
