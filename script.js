@@ -311,6 +311,22 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+let sizes = document.getElementsByClassName('circle');
+
+Array.from(sizes).forEach(size => {
+  size.addEventListener('click', () => {
+
+    Array.from(sizes).forEach(s => {
+      s.style.backgroundColor = "";
+      s.style.color = "";
+    });
+
+    size.style.backgroundColor = "black";
+    size.style.color = "#fff";
+  });
+});
+
+
 function smtobigimg(elem) {
   let smimggrp = document.getElementsByClassName("smimg");
 

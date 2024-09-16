@@ -509,10 +509,6 @@ header .navbar .rightelements .btn {
   border-radius: 50%;
   border: 2px solid;
 }
-#singleprod .allinfo .cardcontent .size .circle#firstcircle {
-  background: #000000;
-  color: #fff;
-}
 #singleprod .allinfo .cardcontent .size .circle p {
   font-weight: bold;
   font-size: 14px;
