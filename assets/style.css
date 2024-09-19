@@ -41,6 +41,13 @@ header .navbar .rightelements select.btn {
   font-size: 17px;
   padding: 10px;
 }
+header .navbar .rightelements select.btn:hover,
+header .navbar .rightelements a:hover {
+  background: #000000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
 header .navbar .title {
   position: absolute;
   left: 50%;
@@ -78,6 +85,13 @@ header .navbar .rightelements .btn {
   border: 2px solid;
   border-radius: 25px;
   font-weight: bold;
+}
+header .navbar .leftelements .btn:hover,
+header .navbar .rightelements .btn:hover {
+  background: #000000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
 @media (width < 480px) {

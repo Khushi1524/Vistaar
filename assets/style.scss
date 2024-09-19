@@ -5,7 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -43,6 +43,16 @@ header {
       }
     }
 
+    .rightelements {
+      select.btn:hover,
+      a:hover {
+        background: #000000;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
     .title {
       position: absolute;
       left: 50%;
@@ -58,6 +68,7 @@ header {
           display: none;
         }
       }
+
       a {
         &.menu {
           font-size: 20px;
@@ -90,6 +101,13 @@ header {
         border: 2px solid;
         border-radius: 25px;
         font-weight: bold;
+      }
+
+      .btn:hover {
+        background: #000000;
+        color: #fff;
+        border: none;
+        cursor: pointer;
       }
     }
   }
@@ -396,8 +414,8 @@ header {
           .smimg {
             width: 100px;
 
-            &.orange{
-              top:20px;
+            &.orange {
+              top: 20px;
             }
 
             &.yellow {
@@ -1008,8 +1026,6 @@ footer {
       align-items: center;
       gap: 20px;
 
-     
-
       .otherlinks {
         .objective {
           flex-direction: column;
@@ -1019,8 +1035,8 @@ footer {
             font-size: 40px;
           }
 
-          ul{
-            li{
+          ul {
+            li {
               font-size: 17px;
             }
           }
@@ -1061,7 +1077,7 @@ footer {
 }
 
 @media (width < 480px) {
-  .msg{
+  .msg {
     width: 40px;
     height: 40px;
     font-size: 30px;
