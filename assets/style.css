@@ -429,8 +429,8 @@ header .navbar .rightelements .btn:hover {
 #categorypg .container .cardbx .card .cardcontent {
   display: flex;
   justify-content: space-between;
-  gap: 25px;
-  padding: 5px 0;
+  gap: 15px;
+  padding: 5px 0px;
   margin-top: 10px;
 }
 #categorypg .container .cardbx .card .cardcontent h4 {
@@ -516,6 +516,7 @@ header .navbar .rightelements .btn:hover {
   flex-direction: row;
   padding: 10px;
   gap: 10px;
+  cursor: pointer;
 }
 #singleprod .allinfo .cardcontent .size .circles {
   display: flex;

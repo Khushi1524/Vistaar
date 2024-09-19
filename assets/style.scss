@@ -529,9 +529,10 @@ header {
         .cardcontent {
           display: flex;
           justify-content: space-between;
-          gap: 25px;
-          padding: 5px 0;
+          gap: 15px;
+          padding: 5px 0px;
           margin-top: 10px;
+
 
           h4 {
             font-size: 18px;
@@ -638,6 +639,7 @@ header {
         flex-direction: row;
         padding: 10px;
         gap: 10px;
+        cursor: pointer;
 
         .circles {
           display: flex;
